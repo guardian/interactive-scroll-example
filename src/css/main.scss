@@ -1,0 +1,37 @@
+@import "mq";
+@import "fonts";
+@import "palette";
+// Uncomment for embeds
+//@import "embed";
+// Uncomment for full screen (including immersive article main media)
+//@import "fullscreen";
+.element-atom,
+.interactive-atom {
+    margin: 0 !important;
+}
+
+
+.name-list__item {
+
+	color: #dcdcdc;
+
+	//transition: color 3s;
+
+	&.name-list__item--hl {
+		color: $gu-blue;
+	}
+
+}
+
+.button {
+
+	opacity: 0;
+
+	transition: opacity .4s;
+
+	.name-list__item--hl & {
+		opacity: 1;
+	}
+
+
+}
